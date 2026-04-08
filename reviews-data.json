@@ -1,0 +1,64 @@
+{
+  "rating": 5.0,
+  "totalReviews": 51,
+  "ratingDistribution": {
+    "5": 49,
+    "4": 2,
+    "3": 0,
+    "2": 0,
+    "1": 0
+  },
+  "highlights": [
+    "Pontualidade",
+    "Limpeza",
+    "Qualidade",
+    "Profissionalismo"
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "author": "Big Tiger (Flavio Machado)",
+      "rating": 5,
+      "text": "Atendimento nota 1000, um profissional muito bacana e competente. Fiquei muito satisfeito com meu corte de cabelo e com certeza voltarei muitas vezes. Ambiente limpo e agradável!",
+      "date": "2024-03-15",
+      "verified": true,
+      "avatar": "BT"
+    },
+    {
+      "id": 2,
+      "author": "Nina Costa",
+      "rating": 5,
+      "text": "O Kléber foi muito atencioso, ganhou uma nova cliente, e cortou meu cabelo muito bem do jeito que eu queria. Recomendo!",
+      "date": "2024-03-10",
+      "verified": true,
+      "avatar": "NC"
+    },
+    {
+      "id": 3,
+      "author": "Mauro Silvestre",
+      "rating": 5,
+      "text": "Top top top... primeira vez que cortei lá... gostei muito e o Kléber é super gente boa.",
+      "date": "2024-03-08",
+      "verified": true,
+      "avatar": "MS"
+    },
+    {
+      "id": 4,
+      "author": "Marcondes Santana",
+      "rating": 5,
+      "text": "Melhor barbeiro da zona norte. Serviço de qualidade, bom atendimento e preço justo!",
+      "date": "2024-03-05",
+      "verified": true,
+      "avatar": "MS"
+    },
+    {
+      "id": 5,
+      "author": "Leonardo Araujo",
+      "rating": 5,
+      "text": "Ótimo profissional, cortes e técnicas atualizadas. Super recomendo.",
+      "date": "2024-03-01",
+      "verified": true,
+      "avatar": "LA"
+    }
+  ]
+}

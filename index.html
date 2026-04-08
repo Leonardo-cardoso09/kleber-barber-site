@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kléber Barber - Barbearia em São Paulo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">✂ Kléber Barber</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Início</a></li>
+                    <li><a href="#services" class="nav-link">Serviços</a></li>
+                    <li><a href="#booking" class="nav-link">Agendar</a></li>
+                    <li><a href="barbearia_site.html" class="nav-link">Avaliações</a></li>
+                    <li><a href="#location" class="nav-link">Localização</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Kléber Barber</h1>
+                <p class="hero-subtitle">Qualidade e Profissionalismo na Zona Norte de São Paulo</p>
+                <div class="hero-rating-display">
+                    <span class="stars-large">★★★★★</span>
+                    <span class="rating-text"><span id="rating-value">5,0</span> • <span id="total-reviews">51</span> avaliações no Google</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">Agendar Agora</a>
+                    <a href="barbearia_site.html" class="btn btn-secondary">Avaliações dos Clientes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>A Studio K é uma barbearia moderna localizada na Zona Norte de São Paulo, dedicada a oferecer o melhor atendimento e qualidade em serviços de corte de cabelo, barba e técnicas especializadas.</p>
+                        <p>Com mais de 51 avaliações de 5 estrelas no Google, somos conhecidos por nossa pontualidade, limpeza, qualidade e profissionalismo.</p>
+                        <ul class="highlights">
+                            <li>✓ Profissional Experiente</li>
+                            <li>✓ Ambiente Limpo e Agradável</li>
+                            <li>✓ Atendimento Personalizado</li>
+                            <li>✓ Preços Justos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <div class="services-row">
+                    <div class="service-card">
+                        <div class="service-icon"></div>
+                        <div class="service-name">Corte de Cabelo</div>
+                        <p class="service-description">Cortes modernos e clássicos, sempre com qualidade e atenção aos detalhes.</p>
+                        <div class="service-price">Preço justo</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"></div>
+                        <div class="service-name">Aparar Barba</div>
+                        <p class="service-description">Serviço especializado para manter sua barba sempre impecável.</p>
+                        <div class="service-price">Serviço de qualidade</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"></div>
+                        <div class="service-name">Corte com Navalha</div>
+                        <p class="service-description">Técnica tradicional e especializada para quem busca o melhor acabamento.</p>
+                        <div class="service-price">Técnica especializada</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"></div>
+                        <div class="service-name">Atendimento VIP</div>
+                        <p class="service-description">Serviço premium com pontualidade e atenção exclusiva.</p>
+                        <div class="service-price">Pontualidade garantida</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>O Que Nossos Clientes Dizem</h2>
+                <div class="testimonials-preview" id="testimonials-container"></div>
+                <div class="view-all-reviews">
+                    <a href="barbearia_site.html" class="btn btn-primary">Ver Todas as Avaliações</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section class="booking-section" id="booking">
+            <div class="container">
+                <h2>Agende Seu Horário</h2>
+                <p class="booking-subtitle">Escolha o serviço, data e horário que preferir</p>
+                
+                <div class="booking-form-container">
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-group">
+                            <label for="service">Serviço desejado</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Selecione um serviço --</option>
+                                <option value="Corte de Cabelo"> Corte de Cabelo</option>
+                                <option value="Aparar Barba"> Aparar Barba</option>
+                                <option value="Corte com Navalha"> Corte com Navalha</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Seu Nome</label>
+                            <input type="text" id="name" name="name" required placeholder="João Silva">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Data desejada</label>
+                                <select id="date" name="date" required>
+                                    <option value="">-- Selecione uma data --</option>
+                                </select>
+                                <small class="form-help">Próximos 14 dias úteis</small>
+                                <small class="form-error" id="date-error"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Horário desejado</label>
+                                <select id="time" name="time" required>
+                                    <option value="">-- Selecione um horário --</option>
+                                </select>
+                                <small class="form-help">Intervalos de 30 minutos</small>
+                                <small class="form-error" id="time-error"></small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem adicional (opcional)</label>
+                            <textarea id="message" name="message" placeholder="Alguma observação especial?" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            💬 Agendar via WhatsApp
+                        </button>
+                    </form>
+
+                    <div class="booking-info">
+                        <h3>Por que agendar pelo WhatsApp?</h3>
+                        <ul>
+                            <li>✓ Confirmação imediata</li>
+                            <li>✓ Comunicação direta com Kléber</li>
+                            <li>✓ Sem burocracias</li>
+                            <li>✓ Resposta rápida</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section" id="location">
+            <div class="container">
+                <h2>Localização</h2>
+                <div class="location-content">
+                    <div class="location-info">
+                        <div class="address-card">
+                            <span class="location-icon">📍</span>
+                            <div>
+                                <h3>Kléber Barber</h3>
+                                <p class="address">R. Antônio de Couros, 84</p>
+                                <p class="neighborhood">Vila Palmeiras, São Paulo - SP</p>
+                                <p class="cep">02726-000</p>
+                            </div>
+                        </div>
+                        <div class="location-actions">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=R.+Antônio+de+Couros,+84+-+Vila+Palmeiras,+São+Paulo+-+SP,+02726-000" target="_blank" class="btn btn-primary">
+                                📍 Ver Rota no Google Maps
+                            </a>
+                            <p class="location-note">Clique para obter direções diretamente no seu navegador</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14628.5!2d-46.7!3d-23.5!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMwJzAwLjAiUyA0NsKwNDInMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890!5m2!1spt-BR!2sbr"
+                            width="100%"
+                            height="300"
+                            style="border:0; border-radius: 8px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <p class="map-caption">Área aproximada - Clique em "Ver Rota" para direções exatas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <h3>Localização</h3>
+                                <p>Zona Norte, São Paulo - SP</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">⭐</span>
+                            <div>
+                                <h3>Classificação</h3>
+                                <p><span id="contact-rating">5,0</span> de 5 estrelas • <span id="contact-reviews">51</span> avaliações</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">✓</span>
+                            <div>
+                                <h3>Destaques</h3>
+                                <p>Pontualidade, Limpeza, Qualidade e Profissionalismo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kléber Barber. Todos os direitos reservados.</p>
+            <p>Zona Norte, São Paulo - SP</p>
+        </div>
+    </footer>
+
+    <script>
+        // Carregar dados de avaliações e atualizar em tempo real
+        async function loadReviewsData() {
+            try {
+                const response = await fetch('reviews-data.json');
+                const data = await response.json();
+                
+                // Atualizar exibições de classificação
+                updateRatingDisplays(data.rating, data.totalReviews);
+                
+                // Atualizar depoimentos
+                updateTestimonials(data.reviews);
+                
+                console.log('✓ Dados atualizados:', new Date().toLocaleTimeString('pt-BR'));
+            } catch (error) {
+                console.error('Erro ao carregar dados:', error);
+            }
+        }
+        
+        function updateRatingDisplays(rating, totalReviews) {
+            document.getElementById('rating-value').textContent = rating.toFixed(1);
+            document.getElementById('total-reviews').textContent = totalReviews;
+            document.getElementById('contact-rating').textContent = rating.toFixed(1);
+            document.getElementById('contact-reviews').textContent = totalReviews;
+        }
+        
+        function updateTestimonials(reviews) {
+            const container = document.getElementById('testimonials-container');
+            container.innerHTML = reviews.slice(0, 3).map(review => `
+                <div class="testimonial-card">
+                    <div class="stars">${'★'.repeat(review.rating)}</div>
+                    <p class="testimonial-text">"${review.text}"</p>
+                    <p class="testimonial-author">${review.author}</p>
+                    <p class="testimonial-date" style="font-size: 12px; color: #888; margin-top: 8px;">${new Date(review.date).toLocaleDateString('pt-BR')}</p>
+                </div>
+            `).join('');
+        }
+        
+        // Formulário de agendamento via WhatsApp
+        document.addEventListener('DOMContentLoaded', function() {
+            loadReviewsData();
+            
+            // Atualizar a cada 5 minutos
+            setInterval(loadReviewsData, 300000);
+
+            // Configurar opções de data e horário
+            const dateSelect = document.getElementById('date');
+            const timeSelect = document.getElementById('time');
+            const dateError = document.getElementById('date-error');
+            const timeError = document.getElementById('time-error');
+
+            // Gerar opções de data (próximos 14 dias úteis)
+            if (dateSelect) {
+                generateDateOptions(dateSelect);
+            }
+
+            // Gerar opções de horário (9:00 às 18:00, intervalos de 30 min)
+            if (timeSelect) {
+                generateTimeOptions(timeSelect);
+            }
+
+            function generateDateOptions(selectElement) {
+                const today = new Date();
+                let currentDate = new Date(today);
+                let optionsCount = 0;
+
+                // Gerar opções para os próximos 14 dias úteis
+                while (optionsCount < 14) {
+                    currentDate.setDate(currentDate.getDate() + 1);
+                    const dayOfWeek = currentDate.getDay();
+
+                    // Apenas segunda (1) a sexta (5)
+                    if (dayOfWeek >= 1 && dayOfWeek <= 5) {
+                        const dateValue = currentDate.toISOString().split('T')[0];
+                        const dateDisplay = currentDate.toLocaleDateString('pt-BR', {
+                            weekday: 'long',
+                            day: '2-digit',
+                            month: '2-digit'
+                        });
+
+                        const option = document.createElement('option');
+                        option.value = dateValue;
+                        option.textContent = dateDisplay;
+                        selectElement.appendChild(option);
+
+                        optionsCount++;
+                    }
+                }
+            }
+
+            function generateTimeOptions(selectElement) {
+                const startHour = 9; // 9:00
+                const endHour = 18;   // 18:00
+                const interval = 30; // 30 minutos
+
+                for (let hour = startHour; hour < endHour; hour++) {
+                    for (let minute = 0; minute < 60; minute += interval) {
+                        const timeValue = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+                        const timeDisplay = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+
+                        const option = document.createElement('option');
+                        option.value = timeValue;
+                        option.textContent = timeDisplay;
+                        selectElement.appendChild(option);
+                    }
+                }
+            }
+
+            // Manipulador de envio do formulário
+            const bookingForm = document.getElementById('booking-form');
+            if (bookingForm) {
+                bookingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const service = document.getElementById('service').value;
+                    const name = document.getElementById('name').value;
+                    const date = document.getElementById('date').value;
+                    const time = document.getElementById('time').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Validar campos
+                    if (!service || !name || !date || !time) {
+                        alert('Por favor, preenchha todos os campos obrigatórios.');
+                        return;
+                    }
+                    
+                    // Formatar data
+                    const dateObj = new Date(date);
+                    const formattedDate = dateObj.toLocaleDateString('pt-BR');
+                    
+                    // Número do WhatsApp do Kléber
+                    const whatsappPhone = '5511998344487';
+                    
+                    // Criar mensagem
+                    let whatsappMessage = `Olá, gostaria de agendar um horário\n\n`;
+                    whatsappMessage += `Serviço: ${service}\n`;
+                    whatsappMessage += `Nome: ${name}\n`;
+                    whatsappMessage += `Data: ${formattedDate}\n`;
+                    whatsappMessage += `Horário: ${time}`;
+                    
+                    if (message.trim()) {
+                        whatsappMessage += `\nObservações: ${message}`;
+                    }
+                    
+                    // Codificar a mensagem
+                    const encodedMessage = encodeURIComponent(whatsappMessage);
+                    
+                    // Criar link do WhatsApp
+                    const whatsappLink = `https://wa.me/${whatsappPhone}?text=${encodedMessage}`;
+                    
+                    // Redirecionar para WhatsApp
+                    window.open(whatsappLink, '_blank');
+                    
+                    // Limpar formulário
+                    bookingForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
