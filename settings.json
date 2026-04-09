@@ -1,0 +1,12 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "^.*$",
+        "cmd": "powershell.exe -ExecutionPolicy Bypass -File \"${workspaceFolder}\\.vscode\\push-on-save.ps1\"",
+        "isAsync": false,
+        "silent": false
+      }
+    ]
+  }
+}
